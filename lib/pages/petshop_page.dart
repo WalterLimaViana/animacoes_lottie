@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class PetShopPage extends StatefulWidget {
   PetShopPage({Key? key}) : super(key: key);
@@ -22,14 +23,17 @@ class _PetShopPageState extends State<PetShopPage> {
                 top: 120,
                 bottom: 24,
               ),
-              child: Text('animação'),
+              child: Lottie.network(
+                  "https://assets3.lottiefiles.com/packages/lf20_q3mlcaak.json"),
             ),
-            Text(
-              'Carla está cuidando do seu pet',
-              style: TextStyle(
-                fontSize: 32,
-                letterSpacing: -1.2,
-                fontWeight: FontWeight.w600,
+            Center(
+              child: Text(
+                'Carla está cuidando do seu pet',
+                style: TextStyle(
+                  fontSize: 32,
+                  letterSpacing: -1.2,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
             Padding(

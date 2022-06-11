@@ -29,7 +29,7 @@ class _AnimacoesPageState extends State<AnimacoesPage> {
           ),
           Divider(),
           ListTile(
-            title: Text('Exemplo: PetShop'),
+            title: Text('Exemplo: Switch'),
             onTap: () => open((_) => SwitchPage()),
           ),
           Divider(),
